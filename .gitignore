@@ -1,0 +1,26 @@
+(
+echo # Environment variables and secrets
+echo .env
+echo .env.*
+echo !.env.example
+echo.
+echo # Spring Boot secrets
+echo **/application-local.properties
+echo **/application-secret.properties
+echo.
+echo # Google Cloud credentials
+echo **/*service-account*.json
+echo **/*credentials*.json
+echo.
+echo # Java and Maven
+echo **/target/
+echo *.class
+echo.
+echo # IDE
+echo .idea/
+echo *.iml
+echo .vscode/
+echo.
+echo # Logs
+echo *.log
+) > .gitignore
